@@ -1,0 +1,231 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-text-color: #212121;
+  --medium-text-color: #757575;
+  --light-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --light-background-color: #f5f5f5;
+}
+
+body {
+  background-color: var(--light-text-color);
+  color: var(--medium-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.logo-firstpart {
+  color: var(--accent-color);
+}
+
+.logo-secondpart {
+  color: #000000;
+}
+
+.site-nav .link {
+  color: var(--dark-text-color);
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.site-nav .link.current{
+  color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.auth-nav .link:hover,
+.auth-nav .link:focus,
+.footer .link:focus,
+.footer .link:hover {
+  color: var(--accent-color);
+}
+
+.auth-nav .link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.hero {
+  color: var(--light-text-color);
+  text-align: center;
+  background-color: #2F303A;
+}
+
+.hero > h1 {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero.button {
+    font-family: Roboto, sans-serif;
+}
+
+/* .hero.button:hover,
+.hero.button:focus {
+    background-color: #......; Чекаю на скріншот, де в макеті подивитися
+} */
+
+.advantages {
+    font-size: 14px;
+}
+
+.advantages h3 {
+    font-size: 14px;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+} 
+
+.advantages h3 {
+    font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+}
+
+.advantages p {
+    line-height: 1.71;
+}
+
+h2 {
+    font-size: 36px;
+font-weight: 700;
+line-height: 1.17;
+}
+
+.title {
+  color: var(--dark-text-color);
+}
+
+.align-center {
+    text-align: center;
+}
+
+.team {
+    line-height: 1.19;
+    background-color: #F5F4FA;
+}
+
+.team li {
+    background-color: var(--light-text-color);
+}
+
+.team h3 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.portfolio {
+    background-color: var(--light-background-color);
+}
+
+.portfolio li {
+    background-color: var(--light-text-color);
+}
+
+.portfolio .button {
+    font-family: Roboto, sans-serif;
+}
+
+.portfolio h3 {
+    font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+
+.portfolio p {
+    line-height: 1.88;
+    color: var(--medium-text-color);
+}
+
+.logo-white-secondpart {
+  color: var(--light-text-color);
+}
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .address {
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+}
+
+.map-link {
+  color: var(--light-text-color);
+}
+.footer .address-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* buttons */
+.button {
+  color: var(--dark-text-color);
+  background-color: var(--light-background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.hero.button {
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;   
+}
+
+.button.primary {
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+}
+
+.button.secondary {
+  color: var(--dark-text-color);
+  background-color: #f5f4fa;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--light-text-color);
+    background-color: var(--accent-color);
+}
