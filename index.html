@@ -22,8 +22,8 @@
 
   <body>
     <header class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container menu-container">
+        <nav class="header-nav">
           <!--logo-->
           <a href="/index.html" class="logo link">
             <span class="logo-firstpart">Web</span
@@ -31,20 +31,24 @@
           </a>
           <!--menu-->
           <ul class="site-nav">
-            <li><a href="./index.html" class="link current">Студія</a></li>
-            <li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-            <li><a href="#" class="link">Контакти</a></li>
+            <li class="site-nav-unit">
+              <a href="./index.html" class="link current">Студія</a>
+            </li>
+            <li class="site-nav-unit">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
+            </li>
+            <li class="site-nav-unit"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
 
         <!--contacts-header-->
         <ul class="auth-nav">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -67,27 +71,27 @@
           <!-- далі покажуть, як сховати заголовки правильно, щоб пошукові системи бачили-->
           <ul class="advantages-list list">
             <li>
-              <h3 class="title">Увага до деталей</h3>
+              <h3 class="advantages-title">Увага до деталей</h3>
               <p>
                 Ідейні міркування, та навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
             <li>
-              <h3 class="title">Пунктуальність</h3>
+              <h3 class="advantages-title">Пунктуальність</h3>
               <p>
                 Завдання організації, особливо рамки та місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
             <li>
-              <h3 class="title">Планування</h3>
+              <h3 class="advantages-title">Планування</h3>
               <p>
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li>
-              <h3 class="title">Сучасні технології</h3>
+              <h3 class="advantages-title">Сучасні технології</h3>
               <p>
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
@@ -97,7 +101,7 @@
         </div>
       </section>
 
-      <section class="portfolio section">
+      <section class="portfolio-main section">
         <div class="container">
           <h2 class="title">Чим ми займаємось</h2>
           <ul class="portfolio-wrapper">
@@ -141,8 +145,10 @@
                 width="260"
                 height="270"
               />
-              <h3 class="title">Ігор Демʼяненко</h3>
-              <p lang="en">Product Designer</p>
+              <div class="team-member-description">
+                <h3 class="team-member-title">Ігор Демʼяненко</h3>
+                <p lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-member">
               <img
@@ -151,8 +157,10 @@
                 width="260"
                 height="270"
               />
-              <h3 class="title">Микола Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <div class="team-member-description">
+                <h3 class="team-member-title">Микола Тарасов</h3>
+                <p lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-member">
               <img
@@ -161,8 +169,10 @@
                 width="260"
                 height="270"
               />
-              <h3 class="title">Микола Тарасов</h3>
-              <p lang="en">Marketing</p>
+              <div class="team-member-description">
+                <h3 class="team-member-title">Микола Тарасов</h3>
+                <p lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-member">
               <img
@@ -171,9 +181,10 @@
                 width="260"
                 height="270"
               />
-
-              <h3 class="title">Михайло Єрмаков</h3>
-              <p lang="en">UI Designer</p>
+              <div class="team-member-description">
+                <h3 class="team-member-title">Михайло Єрмаков</h3>
+                <p lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
