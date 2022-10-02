@@ -161,12 +161,13 @@ img {
 }
 
 .hero-title {
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 30x;
+  margin: 0 auto 30px;
   max-width: 700px;
 }
 
@@ -269,6 +270,7 @@ h2 {
 .team-list {
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .team-member {
@@ -277,10 +279,7 @@ h2 {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-}
-
-.team-list .team-member:last-child {
-  margin-right: -30px;
+  max-width: calc((100%-90) / 4);
 }
 
 div.team-member-description {
