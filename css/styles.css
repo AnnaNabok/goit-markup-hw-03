@@ -105,11 +105,6 @@ img {
   margin: 0;
 }
 
-.site-nav-unit {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .site-nav .site-nav-unit:not(:last-child) {
   margin-right: 50px;
 }
@@ -121,7 +116,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-  padding: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link.current {
@@ -158,6 +154,8 @@ img {
   color: var(--light-text-color);
   text-align: center;
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -168,7 +166,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto 30px;
-  max-width: 700px;
+  max-width: 696px;
 }
 
 .hero-button {
@@ -182,6 +180,7 @@ img {
   display: inline-block;
   padding: 10px 32px;
   border-radius: 4px;
+  border: none;
   min-width: 216px;
   text-align: center;
 }
@@ -197,6 +196,7 @@ img {
 
 .advantages {
   font-size: 14px;
+  padding-bottom: 0;
 }
 
 ul.advantages-list {
@@ -218,6 +218,10 @@ ul.advantages-list {
   margin: -1px;
 }
 
+.advantages-item {
+  flex-basis: calc((100%-90px) / 4);
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -225,11 +229,11 @@ ul.advantages-list {
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 10px;
+  color: var(--dark-text-color);
 }
 
 .advantages p {
   line-height: 1.71;
-  max-width: 270px;
 }
 
 h2 {
@@ -249,7 +253,7 @@ h2 {
 } */
 
 .portfolio-main {
-  background-color: var(--light-background-color);
+  background-color: var(--light-text-color);
 }
 
 .portfolio-wrapper img {
@@ -283,7 +287,7 @@ h2 {
 }
 
 div.team-member-description {
-  padding: 30px;
+  padding: 30px 10px;
 }
 
 .team-member-title {
@@ -293,7 +297,8 @@ div.team-member-description {
 }
 
 .portfolio {
-  background-color: var(--light-background-color);
+  background-color: var(--light-text-color);
+  padding: 94px 0;
 }
 
 .portfolio-buttons-list {
@@ -337,6 +342,7 @@ div.team-member-description {
   padding: 20px 24px;
   background-color: var(--light-text-color);
   border: 1px solid #eeeeee;
+  border-top: transparent;
 }
 
 .portfolio p {
@@ -350,10 +356,11 @@ div.team-member-description {
 
 .footer {
   background-color: #2f303a;
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .footer .logo {
+  display: inline-block;
   margin-bottom: 20px;
 }
 
@@ -361,6 +368,10 @@ div.team-member-description {
   font-size: 14px;
   line-height: 1.71;
   font-style: normal;
+}
+
+.address-item:not(:nth-last-child(n)) {
+  margin-bottom: 9px;
 }
 
 .map-link {
