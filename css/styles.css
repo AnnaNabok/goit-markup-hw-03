@@ -305,6 +305,7 @@ div.team-member-description {
   display: flex;
   gap: 8px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .portfolio .button {
