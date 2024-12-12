@@ -271,6 +271,7 @@ flex-basis: calc((100% - 72) / 4);
 
 .team-item {
     background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-title {
@@ -283,7 +284,7 @@ flex-basis: calc((100% - 72) / 4);
 }
 
 .team-item-wrapper {
-    padding: 32px 16px;
+    padding: 32px 0;
 }
 .portfolio-item-wrapper {
     border: 1px solid #E7E9FC;
@@ -311,7 +312,7 @@ color: #2e2f42;
 }
 
 .portfolio-list {display: flex;
-    gap: 24px;
+    gap: 48px 24px;
     flex-wrap: wrap;}
 
 .portfolio-item {
@@ -326,10 +327,13 @@ color: #2e2f42;
     padding-bottom: 100px;
 }
 
+footer-logo-link {
+display: inline-block;
+margin-bottom: 16px;
+}
+
 .footer-logo {
         color: #f4f4fd;
-        display: inline-block;
-        margin-bottom: 16px;
 }
 
 .footer-text {
