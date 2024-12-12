@@ -105,10 +105,13 @@ font-weight: 500;
         text-align: left;
 }
 /* #region ======HEADER====== */
-.header {}
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .header-flex {
@@ -164,6 +167,7 @@ font-style: normal;
     display: flex;
     gap: 40px;
     justify-content: flex-end;
+    align-items: center;
 }
 
 .contacts-item {
@@ -195,7 +199,7 @@ font-style: normal;
         color: #fff;
         letter-spacing: 0.02em;
         margin: 0 auto 48px;
-        width: 496px;
+        max-width: 496px;
 }
 
 .hero-btn {
@@ -209,8 +213,11 @@ font-style: normal;
             text-transform: capitalize;
             margin: 0 auto;
             padding: 16px 32px;
-min-width: 172px;
+min-width: 169px;
+height: 56px;
 display: block;
+border: none;
+border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -220,21 +227,34 @@ display: block;
 /* #endregion HERO */
 
 .section {
-    padding: 120px 156px;
+    padding: 120px 0;
 }
 /* #region ========FEATURES======== */
 .features {
 
 }
 
+.visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
 .features-list {
     display: flex;
     gap: 24px;
-    /* flex-wrap: wrap; */
 }
 
 .features-item {
-    width: calc((100% - 72)/4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 /* #endregion FEATURES */
 
@@ -246,7 +266,7 @@ display: block;
 .team-list {
     display: flex;
     gap: 24px;
-    width: calc((100%-72)/4);
+flex-basis: calc((100% - 72) / 4);
 }
 
 .team-item {
@@ -255,8 +275,16 @@ display: block;
 
 .team-item-title {
     text-transform: capitalize;
+    text-align: center;
 }
 
+.team p {
+    text-align: center;
+}
+
+.team-item-wrapper {
+    padding: 32px 16px;
+}
 .portfolio-item-wrapper {
     border: 1px solid #E7E9FC;
     border-top: none;
@@ -287,7 +315,7 @@ color: #2e2f42;
     flex-wrap: wrap;}
 
 .portfolio-item {
-    width: calc((100%-48)/3);
+    flex-basis: calc((100% - 48) / 3);
 }
 /* #endregion PORTFOLIO */
 
@@ -300,6 +328,8 @@ color: #2e2f42;
 
 .footer-logo {
         color: #f4f4fd;
+        display: inline-block;
+        margin-bottom: 16px;
 }
 
 .footer-text {
