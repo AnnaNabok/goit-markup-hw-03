@@ -327,13 +327,13 @@ color: #2e2f42;
     padding-bottom: 100px;
 }
 
-footer-logo-link {
+.footer-logo-link {
 display: inline-block;
 margin-bottom: 16px;
 }
 
 .footer-logo {
-        color: #f4f4fd;
+    color: #f4f4fd;
 }
 
 .footer-text {
